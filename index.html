@@ -1,0 +1,61 @@
+<!Doctype html>
+<html lang="=en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width,=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">;
+    <style>
+       button{
+         padding: 30px 40px;
+         border: 1px solid saddlebrown;
+         background-color: rgb(115, 86, 184);
+         font-size: 24px;
+         color: black;
+         border-radius: 10px;
+         position: relative;
+
+         animation-name: move;
+         animation-duration:5s ;
+         
+         transition-timing-function:linear;
+         animation-iteration-count: infinite;
+        
+       }
+         button:hover{
+             transform:rotate(0deg)left;
+             background-color: plum;
+         }
+         div{
+             margin: 40vh;
+             text-align: center;
+         }
+         h1{
+             text-align: center;
+             font-weight: bold;
+
+         }
+         @keyframes move{
+          0%{
+            transform: rotate(0deg);left:0px;
+          }
+          50%{
+             transform:rotate(360deg);left:500px;
+          }
+          100%{
+             transform :rotate(360deg);left:0px;
+          }
+
+        }
+        </style>
+</head>
+<body>
+    <div>
+         
+         <button>Save The World</button>
+
+
+    </div>
+</body>
+</html>
